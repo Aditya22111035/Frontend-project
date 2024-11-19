@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Sundown Studio</title>
+</head>
+<body>
+    <div id="fixed-image">
+    </div>
+
+    <div id="loader">
+        <h1>DEVELOPED</h1>
+        <h1>BY </h1>
+        <h1>ADITYA PANDEY</h1>
+    </div>
+
+    <div id="main" >
+
+    <div id="page1">
+        <nav>
+            <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="">
+
+            <div id="nav-part2">
+                <h4><a href="#">Work</a></h4>
+                <h4><a href="#">Studio</a></h4>
+                <h4><a href="#">Contact</a></h4>
+            </div>
+            <h3>Menu</h3>
+        </nav>
+
+       
+        <div id="center">
+            <div id="left">
+                <h3>Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and
+                    environments.</h3>
+            </div>
+            <div id="right"><h1>SPACES <br>
+                THAT <br>
+                INSPIRE</h1></div>
+        </div>
+        <div id="hero-shape">
+            <div id="hero-1"></div>
+            <div id="hero-2"></div>
+            <div id="hero-3"></div>
+        </div>
+
+        <video  autoplay loop muted src="./video.mp4"></video>
+
+
+    </div>
+
+    <div id="page2">
+        <div id="moving-text">
+            <div id="con">
+                <h1>EXPERIENCE</h1>
+                <div id="gola"></div>
+                <h1>CONTENT</h1>
+                <div id="gola"></div>
+                <h1>ENVIRONMENT</h1>
+                <div id="gola"></div>
+            </div>
+            <div id="con">
+                <h1>EXPERIENCE</h1>
+                <div id="gola"></div>
+                <h1>CONTENT</h1>
+                <div id="gola"></div>
+                <h1>ENVIRONMENT</h1>
+                <div id="gola"></div></div>
+            <div id="con">
+                <h1>EXPERIENCE</h1>
+                <div id="gola"></div>
+                <h1>CONTENT</h1>
+                <div id="gola"></div>
+                <h1>ENVIRONMENT</h1>
+                <div id="gola"></div></div>
+        </div>
+        <div id="page2-bottom">
+            <h1>We are a group of design- driven, goal-focused creators,  producers, and designers<br>who
+                believe that the details <br>make all the difference.</h1>
+
+                <div id="bottom-part2">
+                    <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg" alt="">
+                    <p>We love to create, we love to solve, we love to collaborate, and we love to turn amazing ideas
+                        into reality. We’re here to partner with you through every step of the process and know that
+                        relationships are the most important things we build.</p>
+                </div>
+        </div>
+
+        <div id="gooey"></div>
+
+        
+    </div>
+
+    <div id="page3">
+        <div id="elem-container">
+            <div  id= "elem1" class="elem"
+            data-image="https://images.unsplash.com/photo-1701077137611-9be394bf62f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D">
+
+                <div id="overlay"></div>
+                <h2>
+                    Maker's Studio HOI
+                </h2>
+    
+            </div>
+            <div class="elem"
+            data-image="https://images.unsplash.com/photo-1701014159309-4a8b84faadfe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D">
+
+                <div id="overlay"></div>
+                <h2>
+                    50th Anniversary
+                </h2>
+    
+            </div> <div class="elem"
+            data-image="https://images.unsplash.com/photo-1700924546093-f914fd5b8814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D">
+
+                <div id="overlay"></div>
+                <h2>
+                   NYFW Popup
+                </h2>
+    
+            </div> <div class="elem"
+            data-image="https://images.unsplash.com/photo-1700601437860-e66da79cf6d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D">
+
+                <div id="overlay"></div>
+                <h2>
+                    Air Force 12021
+                </h2>
+    
+            </div> <div class="elem"
+            data-image="https://images.unsplash.com/photo-1700769025506-6c3dcb9ec9b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OXx8fGVufDB8fHx8fA%3D%3D">
+
+                <div id="overlay"></div>
+                <h2>
+                    SOHO NYC
+                </h2>
+    
+            </div>
+            <div class="elem"                   
+             data-image="https://images.unsplash.com/photo-1700601437860-e66da79cf6d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D">
+
+                <div id="overlay"></div>
+                <h2>
+                    SOHO 2023
+                </h2>
+    
+            </div>
+            <div class="elem"
+            data-image="https://images.unsplash.com/photo-1700769025506-6c3dcb9ec9b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OXx8fGVufDB8fHx8fA%3D%3D">
+                <div id="overlay"></div>
+                <h2>
+                   PlayNew Kidvision
+                </h2>
+    
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="page4">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fe_Hunter.svg" alt="" srcset=""> <p>Design and Production partner for Hunter Holiday 2022 Pop-in at Nordstrom 57th St, New York, including activations in Women’s, Men’s and Kid’s zones. Thirty-five (35) additional smaller take-downs in Nordstrom stores across the US. Concept design for Holiday boot customization events in stores across winter 2022.</p></div>
+                <div class="swiper-slide"><img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1601_MediaLink.svg" alt="" srcset=""><p>Creative, Design, and Production Partner for 2023 CES. Scope Included creation of Branding Identity, Assets, and Digital Content, Design, Production design, Production oversight and Installation of client activations for IBM, Delta, Instacart, and more.</p></div>
+                <div class="swiper-slide"><img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1602_AfterPay.svg" alt="" srcset=""><p>Creative, Design, and Production Partner for 2022 NY Fashion Week Pop-Up space. In Partnership with B-Reel scope including creation of Final Design, Design Assets, 3D Renders, Production design, Production/Partner oversight and creation of a two (2) story pop-up for Afterpay’s clients such as Crocs, JD Sports, Container Store, &amp; Revolve.</p></div>
+                <div class="swiper-slide"><img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15ff_Nike.svg" alt="" srcset=""><p>Retained Production support across retail and events in NY, CHI, LA. Creative Design, Design Management, Production/Project Management, and execution of work from concept to installation across the Country.</p></div>
+                <div class="swiper-slide"><img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1600_Converse.svg" alt="" srcset=""><p>Creative Concepting, Design, Design Management, Project Management, and execution of work from concept to installation across the Country. Cross functional communication and management of third party partners.</p></div>
+                <div class="swiper-slide"><img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fd_Arc%E2%80%99teryx.svg" alt="" srcset=""><p>Production and design along with install oversight and execution support for the SoHo store opening on Broadway St, New York. Also working on creative and production work for a new store opening in Glendale, California.</p></div>
+                <!-- <div class="swiper-slide">Slide 7</div> -->
+            </div>
+
+        </div>
+    </div>
+    
+    <div id="page5"></div>
+
+    <div id="full-scr">
+        <div id="full-div1"></div>
+    </div>
+
+
+  
+
+  
+   
+
+</div>
+<div id="footer">
+        
+    <div id="footer-div">
+        <div id="con1">
+            <H2>Work</H2>
+            <H2>Studio</H2>
+            <H2>Contact</H2>
+        </div>
+
+        <div id="con2">
+            <h3>Get industry insights and creative <br> inspiration straight to your inbox </h3>
+            <input type ="text" placeholder="email address " id="email" >
+        </div>
+    </div>
+<H1>SunDown</H1>
+<div id="footer-bottom"></div>
+<div id="gola10"></div>
+
+
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
